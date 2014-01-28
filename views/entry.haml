@@ -1,0 +1,22 @@
+%header
+  %h1 Developer Marketability Survey
+
+%section.instructions  
+  %h3 Instructions
+  :markdown
+    Reorder the statements below based on *career interest*. The statements you find **most interesting** (the one's you would like to know the answer to the most) should be **dragged to the top**. Drag the statements you don't really care about to the bottom.
+
+%ul#sortable.sortable.clearfix
+  - @items.each do |item|
+    %li.ui-state-default{:data => {:item_id => item.num}}
+      %span.ui-icon.ui-icon-arrowthick-2-n-s= item.label
+      
+%section.instructions  
+  %h3 Free Response Question
+  :markdown
+    Any other types of information you would want to know about regarding your marketability? Is there any information you find hard to track down? What type of information would help you make your next career move?
+  
+  %textarea#other.text-input{:rows => 5, :cols => 30}
+
+.actions
+  %button.button Submit Response

@@ -1,0 +1,7 @@
+role
+highest level of education
+years of professional experience
+do you have financial service experience (worked at bank, hedge fund, etc)
+would you be willing to enter this information on a real app?
+
+where is this information going?

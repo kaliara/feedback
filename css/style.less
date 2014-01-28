@@ -1,3 +1,95 @@
+@site-width: 800px;
+@base-text: #555;
+@accent-color: #008EF2; 
+
 body{
-  background: darken(#ff0, 25%);
+  background: #eee;
+  font: 14px/1.25em Helvetica, Arial, sans-serif;
+  color: @base-text;
+  padding: 0;
+}
+h1{
+  font-weight: 100;
+  font-size: 36px;
+  margin: 50px 0 10px;
+  color: @accent-color;
+}
+.container{
+  max-width: @site-width;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.instructions{
+  font-size: 85%;
+  color: lighten(@base-text, 25%);
+  margin: 50px 0;
+}
+.instructions h3{
+  text-transform: uppercase;
+  margin: 0 0 3px;
+}
+.instructions p{
+  margin: 0 0 10px;
+}
+.instructions strong{
+  color: @base-text;
+}
+
+/* sortable list */
+.sortable{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.sortable li{
+  background: #fff;
+  padding: 10px 20px;
+  color: darken(@base-text, 25%);
+  border: 1px solid #ccc;
+  margin: 0 0 10px;
+  cursor: pointer !important;
+  max-width: @site-width;
+}
+.sortable .ui-sortable-helper{
+  opacity: 0.65;
+}
+
+/* text-input*/
+.text-input{
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* actions */
+.actions{
+  margin: 20px 0;
+  text-align: center;
+}
+.button{
+  text-transform: uppercase;
+  font-size: 125%;
+  font-weight: bold;
+  background: @accent-color;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+/* footer */
+footer{
+  font-size: 85%;
+  color: lighten(@base-text, 25%);
+  margin: 75px 0 0;
+  text-align: center;
+}
+
+/* utility */
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }

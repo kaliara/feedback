@@ -1,5 +1,3 @@
 class Item < ParseResource::Base
-  fields :label
+  fields :label, :num
 end
-
-# can do 'items = Item.all'

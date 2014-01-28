@@ -11,3 +11,12 @@
     %footer
       %p
         This survey is completely confidential. Thanks for your participation!
+    
+    != js :main
+    
+    :javascript
+      $(function() {
+        $( "#sortable" ).sortable();
+        $( "#sortable" ).disableSelection();
+      });
+    
