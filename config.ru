@@ -1,1 +1,2 @@
-web: bundle exec ruby app.rb -p $PORT
+require './app.rb'
+run Sinatra::Application
